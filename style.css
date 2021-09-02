@@ -78,6 +78,7 @@ section {
 }
 
 .hero {
+  padding: 40px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -192,4 +193,32 @@ section {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-body {
+    order: 1;
+  }
+
+  .hero-img {
+    width: 75%;
+  }
+
+  .ratings-container {
+    display: none;
+  }
+
+  .hero-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-links > button {
+    width: 100%;
+  }
 }
