@@ -32,6 +32,46 @@ footer {
   padding: 20px 0;
 }
 
+.mobile-nav-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.close-mobile-nav {
+  padding: 18px;
+  border: 0;
+  border-bottom-left-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.mobile-nav {
+  transform: translateX(100%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-nav a {
+  display: block;
+}
+
+.mobile-nav h1 {
+  padding: 50px 50px 0 50px;
+}
+
+.mobile-nav.show {
+  transform: translateX(0);
+}
+
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
@@ -208,6 +248,10 @@ section {
 }
 
 @media (max-width: 760px) {
+  .mobile-nav-btn {
+    display: block;
+  }
+
   .hero {
     flex-direction: column;
   }
@@ -263,7 +307,6 @@ section {
 
   .main-footer {
     flex-direction: column;
-    flex-wrap: wrap;
   }
 
   .main-footer div:last-of-type {
