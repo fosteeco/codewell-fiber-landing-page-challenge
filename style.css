@@ -113,6 +113,10 @@ footer {
   color: #5e26db;
 }
 
+.white-text {
+  color: #fff;
+}
+
 .purple-link {
   color: #4e13d1;
   font-weight: bold;
@@ -245,6 +249,26 @@ section {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+/* Sign in page styling */
+
+.sign-up-wrapper {
+  display: flex;
+  height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sign-up-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: center;
+}
+
+.sign-up-showcase {
+  background: #5e26db;
 }
 
 @media (max-width: 760px) {
