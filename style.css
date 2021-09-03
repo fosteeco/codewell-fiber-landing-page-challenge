@@ -14,6 +14,7 @@ main,
 footer {
   margin: 0 auto;
   max-width: 1000px;
+  padding: 0 30px;
 }
 
 .header-wrap,
@@ -62,6 +63,11 @@ footer {
   color: #fff;
 }
 
+.purple-text {
+  color: #5e26db;
+  font-weight: bold;
+}
+
 .white-btn {
   background-color: #fff;
   color: #5e26db;
@@ -97,9 +103,16 @@ section {
 }
 
 .features {
-  display: flex;
-  align-items: center;
   margin-top: 20px;
+}
+
+.check-mark-contain {
+  display: inline-flex;
+  align-items: center;
+}
+
+.check-mark-contain > img {
+  margin-right: 5px;
 }
 
 .features > span {
@@ -220,5 +233,18 @@ section {
 
   .hero-links > button {
     width: 100%;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .feature-cards {
+    flex-direction: column;
+  }
+
+  .user-cards {
+    flex-direction: column;
+    align-items: center;
   }
 }
