@@ -84,7 +84,6 @@ section {
 }
 
 .hero {
-  padding: 40px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -221,6 +220,10 @@ section {
     width: 75%;
   }
 
+  section {
+    padding: 10px;
+  }
+
   .ratings-container {
     display: none;
   }
@@ -231,8 +234,9 @@ section {
     align-items: center;
   }
 
-  .hero-links > button {
+  section div button {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .desktop-nav {
@@ -243,8 +247,26 @@ section {
     flex-direction: column;
   }
 
+  .feature-cards .feature-card,
+  .user-cards .user-card {
+    margin-bottom: 20px;
+  }
+
   .user-cards {
     flex-direction: column;
     align-items: center;
+  }
+
+  .portfolio-showcase {
+    flex-direction: column;
+  }
+
+  .main-footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .main-footer div:last-of-type {
+    margin-bottom: 30px;
   }
 }
